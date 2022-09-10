@@ -171,13 +171,10 @@ def run(
                         isExists = os.path.exists(folder_path)
                         # 判断结果
                         if not isExists:
-                            # 如果不存在则创建目录
-                            # 创建目录操作函数
                             os.makedirs(folder_path)
-                            print(folder_path + ' 创建成功')
+                            print(folder_path + ' Succeed')
                         else:
-                            # 如果目录存在则不创建，并提示目录已存在
-                            print(folder_path + ' 目录已存在')
+                            print(folder_path + ' Already Exist')
                         # f = open(f'{txt_path}.txt', 'w')
                         #############################################
                         with open(f'{txt_path}.txt', 'a') as f:
